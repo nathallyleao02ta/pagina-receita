@@ -1,8 +1,10 @@
 :root {
+   font-size: 62.5%;
   --text-color-primary: #291B1A;
   --text-color-secondary: #573A37;
   --text-color-on-bg: #F0E8C2;
   --background-color: #573824;
+  --background-image: url (./assets/cupcake.png);
   --surface-color:   #F0E8C2;
 }
 
@@ -12,3 +14,25 @@
    box-sizing: boder-box;
    font-family: "Alice", serif;
 }
+
+ body {
+    font-size: 1.6rem;
+    background-image: var (--background-image);
+    background-color: var ( --background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(12px);
+    padding-block: 4.8rem;
+ }
+
+ body::before {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 6.7;
+    content: "";
+    background-color: var (--background-color);
+    width: 100%;
+    height: 100%;
+    min-height: 100svh;
+ }
