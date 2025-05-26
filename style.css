@@ -70,7 +70,20 @@
 
     }
 
-   
+    .apresentacao {
+      margin-bottom: 2.4;
+    }
+     
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 140%;
+    }
+
+    p:nth-of-type(1) {
+      margin-bottom: 1.2rem;
+    }
+
  } 
 
  
